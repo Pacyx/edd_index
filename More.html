@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>EDOCTORDATA</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Fonts -->
+	<!-- <link href="css/google-font.css"> -->
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/gonex-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style_1.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style_2.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/scroll.css">
+
+	<!-- <link rel="stylesheet" href="css/nav/style.css"> -->
+	<!-- Resource style -->
+	<script src="js/modernizr.js"></script>
+	<style type="text/css">
+		#map {
+			border: 1px #55565b solid;
+			min-height: 300px;
+			width: 100%;
+		}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+
+</head>
+<header id="header">
+	<!-- Section title -->
+	<h1 class="sr-only">Edoctor | Home page</h1>
+	<nav id="main-navigation" class="navbar navbar-default navbar-fixed-top">
+		<!-- Section title -->
+		<h1 class="sr-only">Main navigation</h1>
+		<div class="container" style="width:90%;">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="sr-only">Toggle navigation</span>
+				</button>
+				<a id="brand-mobile" class="navbar-brand navbar-brand-center smoothScroll" href="/index.html">
+					<!-- <i id="logo-name-E">Edoctordata</i> -->
+					<!-- <i id="logo-name-C">  |  熠道大数据</i> -->
+					<img alt="Gonex" src="img/logo.png" width="140px">
+				</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="main-navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="smoothScroll" href="./index.html">首页
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#ai">人工智能</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#data">大数据</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#project">产品服务</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="#contact">关于我们</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+</header>
+
+<main>
+	<!-- /// -->
+	<section id="home" class="toresize1" style="height:400px;margin-top: 85px;">
+		<!-- Section title -->
+		<h1 class="sr-only">Home</h1>
+		<div id="carousel-hero" class="carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox" style="height: 400px;">
+				<div class="item nav-1 active">
+					<div class="overlay"></div>
+					<div class="carousel-caption">
+						<span class="h1" style="color:rgb(249, 83, 83)">医疗数据科研平台</span>
+						<p style="font-size:18px;line-height:2;">以云平台为中心服务医生，将医院数据进行多中心专病连接,实时共享和接受关键信息，流水线作业方式，快速开发科研项目，无需研究定制化。</p>
+						<a href="Item_2.html" class="btn btn-default green-white">详细了解</a>
+					</div>
+				</div>
+				<!-- /.item -->
+				<div class="item nav-2">
+					<div class="overlay"></div>
+					<div class="carousel-caption">
+						<span class="h1" style="color:rgb(249, 83, 83)">SEEDATA大数据平台</span>
+						<p style="font-size:18px;line-height:2;">实现合作医院间的数据查询,提供医疗研究的数据查询功能,通过大数据服务提供精准医疗，个性化健康保健指导。</p>
+						<a href="Item_1.html" class="btn btn-default green-white">详细了解</a>
+					</div>
+				</div>
+				<!-- /.item -->
+			</div>
+			<a class="left carousel-control" href="#carousel-hero" role="button" data-slide="prev">
+				<span class="ico ico-arrow_left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-hero" role="button" data-slide="next">
+				<span class="ico ico-arrow_right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<!-- /.carousel -->
+	</section>
+
+	<section id="ai" class=" makecenter" style="background:#fff;padding-bottom:50px;">
+		<div class="container" style="margin:0;width:100%;">
+			<div class="row clearfix">
+				<div class="col-md-12 column eddtitle">
+					<h1 class="tech-title">
+						<span style="border-bottom:2px #03A9F4 solid">AI人工智能技术</span>
+					</h1>
+					<ul class="eddul">
+						<li>
+							<i class="glyphicon glyphicon-ok"></i> 利用人工智能学习海量医疗诊疗数据</li>
+						<li>
+							<i class="glyphicon glyphicon-ok"></i> 更高效的数据处理能力</li>
+						<li>
+							<i class="glyphicon glyphicon-ok"></i> 拥有国内领先专家的患者病历为训练样本</li>
+					</ul>
+				</div>
+			</div>
+			<div class="makecenter">
+				<div style="width:100%;" class=" makecenter">
+					<div class="row clearfix" style="width:80%;margin:0;padding:10px;">
+						<div class="col-md-4 column" id="eddais">
+							<div class="eddai">
+								<button class="btn item-modal1" data-toggle="modal" data-target="#zx">
+									<div class="eddai">AI辅助分诊</div>
+								</button>
+							</div>
+						</div>
+						<div class="col-md-4 column" id="edddatas">
+							<div class="edddata">
+								<button class="btn item-modal2" id="shouchuang" data-toggle="modal" data-target="#ys">
+									<div class="edddata">AI辅助诊断</div>
+								</button>
+							</div>
+						</div>
+						<div class="col-md-4 column" id="eddprojects">
+							<div class="eddproject">
+								<button class="btn item-modal3" id="qianjing" data-toggle="modal" data-target="#sc">
+									<div class="eddproject">癌症辅助诊疗系统</div>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<!-- /.container -->
+	</section>
+
+	<section id="data" class="makecenter" style="background:#fff;">
+		<div class="container " style="height:450px">
+			<div class="row clearfix">
+				<div class="col-md-12 column eddtitle">
+					<h1 class="tech-title">
+						<span style="border-bottom:2px #03A9F4 solid">大数据</span>
+					</h1>
+					<ul class="eddul">
+						<li>
+							<i class="glyphicon glyphicon-ok"></i> 高效处理数据</li>
+						<li>
+							<i class="glyphicon glyphicon-ok"></i> 大体量数据处理</li>
+						<li>
+							<i class="glyphicon glyphicon-ok"></i> 多种数据类型处理</li>
+						<li>
+							<i class="glyphicon glyphicon-ok"></i> 挖掘更多商业价值</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row clearfix">
+
+				<div class="col-md-3 column">
+					<div style="text-align:center;">
+
+						<img class="data-img1" src="img/图片1.png" alt="">
+						<div class="datatitles_1">数据挖掘算法</div>
+						<div class="datatitle_1">集群、分割、孤立点分析还有其他的算法让我们深入数据内部，挖掘价值。</div>
+					</div>
+				</div>
+				<div class="col-md-3 column">
+					<div style="text-align:center;">
+						<img class="data-img2" src="img/图片2.png" alt="">
+						<div class="datatitles_2">预测性分析能力</div>
+						<div class="datatitle_2">分析员根据可视化分析和数据挖掘的结果做预测性的判断。</div>
+					</div>
+				</div>
+				<div class="col-md-3 column">
+					<div style="text-align:center;">
+						<img class="data-img3" src="img/图片3.png" alt="">
+						<div class="datatitles_3">语义引擎</div>
+						<div class="datatitle_3">解析,提取,分析数据,从"文档"中智能提取信息。</div>
+					</div>
+				</div>
+				<div class="col-md-3 column">
+					<div style="text-align:center;">
+						<img class="data-img4" src="img/图片4.png" alt="">
+						<div class="datatitles_4">数据质量管理</div>
+						<div class="datatitle_4">标准化的流程和工具对数据进行处理可以保证一个预先定义好的高质量的分析结果</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+
+	<section id="project" class=" makecenter" style="background:#fff;padding-bottom:50px;">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column eddtitle">
+					<h1 class="tech-title">
+						<span style="border-bottom:2px #03A9F4 solid">产品服务</span>
+					</h1>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+					<div class="makecenter" style="background:url(img/nav_2.jpg);height:300px;box-shadow:5px 5px 5px 5px #999;">
+						<div style="padding:10px;text-align:center;">
+							<!-- <div> -->
+							<span style="font-size:2em;color:#000;">SEEDATA大数据平台</span>
+							<p style="margin:20px 0;font-size:18px;line-height:2;">实现合作医院间的数据查询,提供医疗研究的数据查询功能,通过大数据服务提供精准医疗，个性化健康保健指导。</p>
+							<a href="Item_1.html" class="btn btn-default green-white">详细了解</a>
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 column">
+					<!-- left -677px -->
+					<div class="makecenter" style="background:url(img/nav_1.jpg);background-position:right;height:300px;box-shadow:5px 5px 5px 5px #999;">
+						<div style="padding:10px;text-align:center;">
+							<!-- <div style="height:220px"> -->
+							<span style="font-size:2em;color:#000;">医疗数据科研平台</span>
+							<p style="margin:20px 0;font-size:18px;line-height:2;">以云平台为中心服务医生，将医院数据进行多中心专病连接,实时共享和接受关键信息，流水线作业方式，快速开发科研项目，无需研究定制化。</p>
+							<a href="Item_2.html" class="btn btn-default green-white">详细了解</a>
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+
+	<section id="contact" class=" makecenter" style="background:#fff;">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column eddtitle">
+					<h1 class="tech-title">
+						<span style="border-bottom:2px #03A9F4 solid">关于我们</span>
+					</h1>
+				</div>
+			</div>
+			<div class="row clearfix" style="padding:50px 0">
+				<div class="col-md-6">
+					<div style="padding-bottom:20px;">
+						<h1 style="font-size:18px;line-height:1.5;text-indent: 2em;">熠道大数据（上海）科技发展有限公司</h1>
+						<p style="font-size:18px;line-height:1.5;text-indent: 2em;">于2016年成立，是一家专注于完善移动互联网医疗服务品质的大数据公司，通过采集，整理，存储，分 分析医疗数据来建立健康医疗大数据互联网平台，为持续提高大众的健康医疗水平提供精确而有效的大数据分析产品。</p>
+					</div>
+					<div class="row clearfix" style="text-align:center;">
+						<!-- <div class="makecenter" style="width:100%;height:100px"> -->
+						<!-- <div style="width:100%;height:100px"> -->
+						<div class="col-md-3 concat-icon">
+							<img src="img/gongzhonghao.jpg" alt="" width="100px" height="100px">
+						</div>
+						<div class="col-md-3 concat-icon isphone">
+							<i class="glyphicon glyphicon-earphone" style="font-size:4rem;line-height:100px;"></i>
+						</div>
+						<div class="col-md-3  concat-icon isemail">
+							<i class="glyphicon glyphicon-envelope" style="font-size:4rem;line-height:100px;"></i>
+						</div>
+						<div class="col-md-3  concat-icon isaddress">
+							<i class="glyphicon glyphicon-home" style="font-size:4rem;line-height:100px;"></i>
+						</div>
+						<div class="col-md-6 forphone">
+							<div style="height:100px;display:table-cell;vertical-align: middle;">
+								<i>021-61998458
+									<br> 021-61998468</i>
+							</div>
+						</div>
+						<div class="col-md-6 foremail">
+							<div style="height:100px;display:table-cell;vertical-align: middle;">
+								<i>info@edoctordata.cn</i>
+							</div>
+						</div>
+						<div class="col-md-6 foraddress">
+							<div style="height:100px;display:table-cell;vertical-align: middle;">
+								<i>地铁：3号线（江湾镇），地铁10号线（三门路）
+									<br>公交：187路，537路，758路，819路(政立路武川路)</i>
+							</div>
+						</div>
+						<!-- </div>	 -->
+						<!-- </div> -->
+					</div>
+					<div style="text-align:center;padding:10px 0;">
+						<a href="About.html" class="btn btn-default green-white">详细了解</a>
+					</div>
+
+				</div>
+				<div class="col-md-6 column">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+
+<!-- 内容 -->
+<div id="zx" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					AI辅助分诊
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div style="height:100%;">
+					<img src="img/nav_1.jpg" width="100%" height="40%" alt="">
+					<div class="makecenter" style="text-indent: 2em;height:50%;padding:30px;">
+						<div>
+							<h1 style="font-size:1.6em;padding-bottom:40px;">AI辅助分诊</h1>
+							<p>利用人工智能学习海量医疗诊疗数据， 当病人入医院后可以简单描述症状，人工智能辅助提示分诊医生所需要挂号的科室、同时进行的检查检验内容，提升医生效率，降低病人重复排队的时间，提升医疗满意度。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="ys" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					AI辅助诊断
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div style="height:100%;">
+					<img src="img/nav_1.jpg" width="100%" height="40%" alt="">
+					<div class="makecenter" style="text-indent: 2em;height:50%;padding:30px;">
+						<div>
+							<h1 style="font-size:1.6em;padding-bottom:40px;">AI辅助诊断</h1>
+							<p>计算机拥有更高效的数据处理能力，能够“阅读”海量的病历和资料并从中总结经验。</p>
+							<p>AI辅助诊断是将人工智能技术用于医疗诊断中，让计算机‘学习’更多专家医生的医疗知识，从病症描述推测可能的疾病并建议所需要的检验插件内容，并结合症状与检查结果给出最具可能性的诊断提示。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="sc" class="modal fade bs-example-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					癌症辅助诊疗系统
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div style="height:100%;">
+					<img src="img/nav_1.jpg" width="100%" height="40%" alt="">
+					<div class="makecenter" style="text-indent: 2em;height:50%;padding:30px;">
+						<div>
+							<h1 style="font-size:1.6em;padding-bottom:40px;">癌症辅助诊疗系统</h1>
+							<p>熠道专注于肿瘤方向，旨在提升肿瘤类疾病的诊疗质量和科研水平。</p>
+							<p>拥有国内领先专家的患者病历为训练样本。结合医学知识图谱、药物应用画像、患者临床路径等多维数据，运用深度学习、自然语言处理、神经网络等技术，构建精准的诊疗模型，给出诊疗建议和背后的数据支持。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 内容 -->
+
+<footer id="footer">
+	<a class="smoothScroll" href="#home">
+		<div id="backtop">
+			<i class="glyphicon  glyphicon-arrow-up"></i>
+		</div>
+	</a>
+	<!-- Section title -->
+	<h1 class="sr-only">Footer</h1>
+	<p class="copyright text-green"> Copyright ©
+		<span id="year">2018</span> 熠道大数据科技发展（上海）有限公司 All Rights Reserved ICP号：沪 16030223</p>
+
+</footer>
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/libs/smooth-scroll.min.js"></script>
+<script src="js/libs/modernizr.mq.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/more.js"></script>
+<!-- <script src="js/jquery.mobile.custom.min.js"></script> -->
+<!-- <script src="js/main.js"></script> -->
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#sidebarCollapse').on('click', function () {
+			$('#sidebar').toggleClass('active');
+			$(this).toggleClass('active');
+			$('#content').toggleClass('changeHd');
+		});
+		map_init();
+		map_load();
+
+	});
+	///////
+	var markerArr = [{
+		title: "熠道大数据科技发展（上海）有限公司",
+		point: "121.5054949851,31.3152506932",
+		address: "上海市杨浦区政青路59号四楼",
+		tel: "021-61998458"
+	}];
+
+	function map_init() {
+		var map = new BMap.Map("map"); // 创建Map实例
+		var point = new BMap.Point(121.5054949851, 31.3152506932); //地图中心点，广州市
+		map.centerAndZoom(point, 13); // 初始化地图,设置中心点坐标和地图级别。
+		map.enableScrollWheelZoom(true); //启用滚轮放大缩小
+		//向地图中添加缩放控件
+		var ctrlNav = new window.BMap.NavigationControl({
+			anchor: BMAP_ANCHOR_TOP_LEFT,
+			type: BMAP_NAVIGATION_CONTROL_LARGE
+		});
+		map.addControl(ctrlNav);
+
+		//向地图中添加缩略图控件
+		var ctrlOve = new window.BMap.OverviewMapControl({
+			anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+			isOpen: 1
+		});
+		map.addControl(ctrlOve);
+
+		//向地图中添加比例尺控件
+		var ctrlSca = new window.BMap.ScaleControl({
+			anchor: BMAP_ANCHOR_BOTTOM_LEFT
+		});
+		map.addControl(ctrlSca);
+
+		var point = new Array(); //存放标注点经纬信息的数组
+		var marker = new Array(); //存放标注点对象的数组
+		var info = new Array(); //存放提示信息窗口对象的数组
+		for (var i = 0; i < markerArr.length; i++) {
+			var p0 = markerArr[i].point.split(",")[0]; //
+			var p1 = markerArr[i].point.split(",")[1]; //按照原数组的point格式将地图点坐标的经纬度分别提出来
+			point[i] = new window.BMap.Point(p0, p1); //循环生成新的地图点
+			marker[i] = new window.BMap.Marker(point[i]); //按照地图点坐标生成标记
+			map.addOverlay(marker[i]);
+			marker[i].setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+			var label = new window.BMap.Label(markerArr[i].title, {
+				offset: new window.BMap.Size(20, -10)
+			});
+			marker[i].setLabel(label);
+			info[i] = new window.BMap.InfoWindow("<p style=’font-size:12px;lineheight:1.8em;’>" + markerArr[i].title +
+				"</br>地址：" + markerArr[i].address + "</br> 电话：" + markerArr[i].tel + "</br></p>"); // 创建信息窗口对象
+		}
+		marker[0].addEventListener("mouseover", function () {
+			this.openInfoWindow(info[0]);
+		});
+		marker[1].addEventListener("mouseover", function () {
+			this.openInfoWindow(info[1]);
+		});
+		marker[2].addEventListener("mouseover", function () {
+			this.openInfoWindow(info[2]);
+		});
+	}
+	//异步调用百度js
+	function map_load() {
+		var load = document.createElement("script");
+		load.src = "http://api.map.baidu.com/api?v=1.4&callback=map_init";
+		document.body.appendChild(load);
+	}
+</script>
+
+
+</body>
+
+</html>
