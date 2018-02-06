@@ -145,8 +145,8 @@ button > * {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #9e9a9a;
-	background: #f95353;
+	/* background: #9e9a9a; */
+	/* background: #f95353; */
 	-webkit-transform: scaleX(0);
 	-ms-transform: scaleX(0);
 	transform: scaleX(0);
@@ -174,7 +174,7 @@ button > * {
 
 .btn-default.green-white {
 	color: #ffffff;
-	background-color: #31708f;
+	background-color: #f95353;
 }
 
 .btn-default.green-white:hover,
@@ -249,14 +249,16 @@ NAVIGATION
 	}
 	to{
 		/* box-shadow: 0px 4px 4px #999; */
-		background: rgb(68, 114, 196);
+		/* background: rgb(68, 114, 196); */
+		background: #174c95;
 	}
 }
 
 @keyframes showbg2{
 	from{
 		/* box-shadow: 0px 4px 4px #999; */
-		background: rgb(68, 114, 196);
+		/* background: rgb(68, 114, 196); */
+		background: #174c95;
 
 	}
 	to{
@@ -1020,8 +1022,8 @@ RESPONSIVE
 }
 
 .bigtitle{
-	font-size: 45px;
-	padding-bottom: 40px;
+	font-size: 40px;
+	padding-bottom: 15px;
 }
 
 .makecenter{
@@ -1098,7 +1100,7 @@ RESPONSIVE
 	h1, .h1 {
 		font-size: 45px;
 		font-weight: 700;
-		/* color: #f95353;s */
+		/* color: #f95353;s*/
 		color: #333;
 		/* text-indent:2em; */
 		
@@ -1493,3 +1495,77 @@ RESPONSIVE
 .topre:hover,.tonext:hover{
 	color: rgb(249, 83, 83);
 }
+
+
+@keyframes makebg{
+	from{
+		background: #fff;
+	}
+	to{
+		background: rgba(204, 204, 204, 0.5);
+	}
+}
+
+
+@keyframes makebgbk1{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+
+
+/* .makebg{
+	animation:makebg 1s;
+	-webkit-animation:makebg 1s;
+	animation-delay:1s;
+	animation-iteration-count:1;
+	animation-fill-mode:forwards;
+} */
+
+.makebg1{
+	animation:makebgbk1 2s;
+	-webkit-animation:makebgbk1 2s;
+	animation-iteration-count:1;
+	animation-fill-mode:forwards;
+	background: url(../img/AI9.jpg);
+	background-size:100% 100%;
+}
+
+
+.makebg2{
+	animation:makebgbk1 2s;
+	-webkit-animation:makebgbk1 2s;
+	animation-iteration-count:1;
+	animation-fill-mode:forwards;
+
+	background: url(../img/AI7.jpg) ;
+	background-size: 100% 100%;
+}
+
+.makebg3{
+	animation:makebgbk1 2s;
+	-webkit-animation:makebgbk1 2s;
+	animation-iteration-count:1;
+	animation-fill-mode:forwards;
+
+	background: url(../img/Ai8.jpg);
+	background-size: 100% 100%;
+}
+
+.makebg4{
+	animation:makebgbk1 2s;
+	-webkit-animation:makebgbk1 2s;
+	animation-iteration-count:1;
+	animation-fill-mode:forwards;
+
+	background: url(../img/AI6.jpg);
+	background-size: 100% 100%;
+}
+
+
+
+
