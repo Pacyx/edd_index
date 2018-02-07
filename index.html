@@ -12,7 +12,7 @@
 	<!-- Fonts -->
 	<link href="css/google-font.css">
 	<!-- Styles -->
-		<link rel="stylesheet" type="text/css" href="css/crowd.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/crowd.css"> -->
 
 	<link rel="stylesheet" type="text/css" href="css/gonex-icons.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -117,36 +117,30 @@
 		</nav>
 
 		<section id="home" class="toresize1" style="padding-bottom:85px;">
-			<div class="bg toresize1">
-				<canvas id="display"></canvas>
-				<div id="blachole"></div>
-				<!-- Section title -->
-				<h1 class="sr-only">Home</h1>
-				<div id="carousel-hero" class="carousel slide" data-ride="carousel">
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="itemactive toresize1" style="display:flex;justify-content:center;align-items:center;">
-							<div>
-								<div class="tonext tonext_1">
-									<a class="smoothScroll " href="#work">
-										<span class="pull1">
-											<i class="glyphicon glyphicon-chevron-down "></i>
-										</span>
-									</a>
-								</div>
+			<!-- Section title -->
+			<h1 class="sr-only">Home</h1>
+			<div id="carousel-hero" class="carousel slide" data-ride="carousel" >
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox" >
+					<div class="item nav-1 active toresize1" style="display:flex;justify-content:center;align-items:center;">
+						<div class="overlay">
+							<div class="tonext"  style="color:#fff;">
+								<a class="smoothScroll " href="#work">
+									<span class="pull1"><i class="glyphicon glyphicon-chevron-down "></i></span>
+								</a>
 							</div>
-							<div class="makecenter" style="height:500px;width:100%;">
-								<div class="row clearfix makecenter" style="width:90%;">
-									<div id="eddlog" class="col-md-4 col-xs-4 col-lg-4 column" style="text-align:center;">
-										<img src="img/edd.png" alt="">
-									</div>
-									<div id="edd-text" class="col-md-8 col-xs-8 col-lg-8 column">
-										<div style="display:flex;justify-content:flex-end;">
-											<div style="text-align:center">
-												<span class="h1" style="text-shadow:3px 3px #000;color:#fff;text-align:center;">熠道大数据医疗平台</span>
-												<p class="edd-js" style="padding-top:30px;"> 专注于肿瘤方向，旨在提升肿瘤类疾病的诊疗质量和科研水平。</p>
-												<p class="edd-js">用于创建和管理网上临床调研和转化医学研究项目等。流水线作业方式，快速开发科研项目，支持多平台访问使用。</p>
-											</div>
+						</div>
+						<div class="makecenter" style="width:100%;" >
+							<div class="row clearfix makecenter" style="width:90%;">
+								<div  id="eddlog" class="col-md-4 col-xs-4 col-lg-4 column" style="text-align:center;">
+									<img src="img/edd.png" alt="">
+								</div>
+								<div  id="edd-text" class="col-md-8 col-xs-8 col-lg-8 column">
+									<div style="display:flex;justify-content:flex-end;">
+										<div style="text-align:center">
+											<span class="h1" style="text-shadow:3px 3px #000;color:#fff;text-align:center;">熠道大数据医疗平台</span>
+											<p style="text-shadow:2px 2px #000;color:#fff;font-size:26px;line-height:1.2;padding-top:30px;">	专注于肿瘤方向，旨在提升肿瘤类疾病的诊疗质量和科研水平。</p>
+											<p style="text-shadow:2px 2px #000;color:#fff;font-size:26px;line-height:1.2;">用于创建和管理网上临床调研和转化医学研究项目等。流水线作业方式，快速开发科研项目，支持多平台访问使用。</p>
 										</div>
 									</div>
 								</div>
@@ -154,8 +148,8 @@
 						</div>
 					</div>
 				</div>
-				<!-- /.carousel -->
 			</div>
+			<!-- /.carousel -->
 		</section>
 
 		<section id="work" class=" makecenter" style="background:#fff;">
@@ -462,7 +456,7 @@
 	<script src="js/libs/smooth-scroll.min.js"></script>
 	<script src="js/libs/modernizr.mq.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="js/custom.js"></script>
 	<script src="js/jquery.mobile.custom.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/universal-tilt.min.js"></script>

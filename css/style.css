@@ -496,7 +496,7 @@ HOME SECTION
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(22, 23, 24, 0.3);
+	background: rgba(22, 23, 24, 0.5);
 	 /* opacity:0.5; */
 }
 
@@ -545,7 +545,7 @@ HOME SECTION
 }
 
 .nav-1{
-	background: url("../img/Ai-2.jpg") center center no-repeat;
+	background: url("../img/nav_2.jpg") center center no-repeat;
 }
 .nav-2{
 	background: url("../img/nav2.jpg") center center no-repeat;
@@ -1532,7 +1532,7 @@ RESPONSIVE
 	animation-iteration-count:1;
 	animation-fill-mode:forwards;
 	background: url(../img/AI9.jpg);
-	background-size:100% 100%;
+	background-size:100%;
 }
 
 
@@ -1543,7 +1543,7 @@ RESPONSIVE
 	animation-fill-mode:forwards;
 
 	background: url(../img/AI7.jpg) ;
-	background-size: 100% 100%;
+	background-size:100%;
 }
 
 .makebg3{
@@ -1553,7 +1553,7 @@ RESPONSIVE
 	animation-fill-mode:forwards;
 
 	background: url(../img/Ai8.jpg);
-	background-size: 100% 100%;
+	background-size:100%;
 }
 
 .makebg4{
