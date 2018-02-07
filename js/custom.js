@@ -50,6 +50,7 @@ $(function () {
 	contralScorll();
 
 	contralResize(getWidth,toresize);
+	// draw(getWidth,toresize);
 
 	$(window).resize(function () {
 		if (document.compatMode == "BackCompat") {
@@ -61,7 +62,7 @@ $(function () {
 		}
 
 		contralResize(newWidth,newresize);
-
+		
 	});
 
 	var navt = $('.ischoose').attr('id');
@@ -200,6 +201,7 @@ function nextAndPreClick(){
 		
 		var newnavtips = $('.ischoose').attr('id');
 		$('#' + newnavtips + '>span:first').css('background', '#f95353');
+
 	})
 
 	$('.pull2').on('click',function(e){
@@ -446,11 +448,14 @@ function scroll(){
 function animationForPage(){
 
 	$('#seedata-text').mouseenter(function(){
-
+		moveline1();
 		$('#seedata-text').on('click',function(e){
 			e.stopPropagation();
 		});
 		$('#work').on('click',function(){
+			$('.line1').removeClass('moveline');
+			$('.line1').addClass('moveline1');
+
 			$('#seedata-text').removeClass('makebg1');
 			$('#seedata-text').css('box-shadow','0 0 0');
 			
@@ -474,6 +479,7 @@ function animationForPage(){
 
 
 	$('#work-text').mouseenter(function(){
+		moveline2()
 
 		$('#work-text').on('click',function(e){
 			e.stopPropagation();
@@ -486,6 +492,9 @@ function animationForPage(){
 		$('.u-sp2').css({'color':'#fff','text-shadow':'2px 2px 2px #000'});
 
 		$('#work_1').on('click',function(){
+			$('.line2').removeClass('moveline');
+			$('.line2').addClass('moveline1');
+
 			$('#work-text').removeClass('makebg2');
 			$('#work_1').removeClass('makebg')
 
@@ -498,6 +507,7 @@ function animationForPage(){
 
 
 	$('#ai1').mouseenter(function(){
+		moveline3();
 		$('#ai1').on('click',function(e){
 			e.stopPropagation();
 		});
@@ -509,6 +519,9 @@ function animationForPage(){
 		$('.u-sp3').css({'color':'#fff','text-shadow':'2px 2px 2px #000'});
 
 		$('#skills').on('click',function(){
+			$('.line3').removeClass('moveline');
+			$('.line3').addClass('moveline1');
+
 			$('#ai1').removeClass('makebg3');
 			$('#skills').removeClass('makebg');
 
@@ -519,6 +532,7 @@ function animationForPage(){
 	})
 
 	$('#bigdata-text').mouseenter(function(){
+		moveline4();
 		$('#bigdata-text').on('click',function(e){
 			e.stopPropagation();
 		});
@@ -530,6 +544,9 @@ function animationForPage(){
 		$('.u-sp4').css({'color':'#fff','text-shadow':'2px 2px 2px #000'});
 
 		$('#skills_1').on('click',function(){
+			$('.line4').removeClass('moveline');
+			$('.line4').addClass('moveline1');
+
 			$('#bigdata-text').removeClass('makebg4');
 			$('#skills_1').removeClass('makebg')
 	
@@ -642,17 +659,55 @@ function includeJs(filename) {
     head.appendChild(script)
 }
 
-// function removeJsFile(){
-// 	// var targetelement=(filetype=="js")? "script" : (filetype=="css")? "link" : "none"
-// 	// var targetattr=(filetype=="js")? "src" : (filetype=="css")? "href" : "none"
-// 	var allsuspects=document.getElementsByTagName('script');
-// 	console.log(allsuspects)
-// 	// for (var i=allsuspects.length; i>=0; i--){
-// 	// if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(filename)!=-1)
-// 	// allsuspects[i].parentNode.removeChild(allsuspects[i])
-// 	// }
+function moveline1(){
+	$('.line1').removeClass('oline');
+	$('.line1').removeClass('moveline1');
+	$('.line1').addClass('moveline');
+
+}
+function moveline2(){
+	$('.line2').removeClass('oline');
+	$('.line2').removeClass('moveline1');
+	$('.line2').addClass('moveline');
+}
+function moveline3(){
+	$('.line3').removeClass('oline');
+	$('.line3').removeClass('moveline1');
+	$('.line3').addClass('moveline');
+}
+
+function moveline4(){
+	$('.line4').removeClass('oline');
+	$('.line4').removeClass('moveline1');
+	$('.line4').addClass('moveline');
+}
+
+// function draw(){
+// 	$('#cvs-1').css({"height":h,"width":w});
+//     var canvas = document.getElementById('cvs-1');
+//     if (canvas.getContext) {
+//         var ctx = canvas.getContext('2d');
+
+//         for (var i = 0; i < 4; i++) {
+//             for (var j = 0; j < 3; j++) {
+//                 ctx.beginPath();
+//                 var x = 25 + j * 50; // x 坐标值
+//                 var y = 25 + i * 50; // y 坐标值
+//                 var radius = 20; // 圆弧半径
+//                 var startAngle = 0; // 开始点
+//                 var endAngle = Math.PI + (Math.PI * j) / 2; // 结束点
+//                 var anticlockwise = i % 2 == 0 ? false : true; // 顺时针或逆时针
+
+//                 ctx.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+
+//                 if (i > 1) {
+//                     ctx.fill();
+//                 } else {
+//                     ctx.stroke();
+//                 }
+//             }
+//         }
+//     }
 // }
-
-
 
 
