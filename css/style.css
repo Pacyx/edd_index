@@ -856,10 +856,6 @@ ABOUT US SECTION
 SKILLS SECTION
 ***********************/
 
-#skills {
-	background: #f7f7f7;
-}
-
 #skills .progress {
 	background: #31708f;
 	background: -moz-linear-gradient(left, #31708f 0%, #f85252 100%);
